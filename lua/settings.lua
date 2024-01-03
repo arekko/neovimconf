@@ -50,3 +50,6 @@ o.completeopt = 'menuone,noselect'
 o.termguicolors = true
 
 vim.opt.guifont = {'JetBrains_Mono', ':h15'}
+
+o.tabstop = 2
+o.shiftwidth = 2
