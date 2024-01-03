@@ -2,7 +2,6 @@ require('keybinds')
 require('settings')
 
 
-
 -- Install package manager
 --    https://github.com/folke/lazy.nvim
 local lazypath = vim.fn.stdpath 'data' .. '/lazy/lazy.nvim'

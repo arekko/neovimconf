@@ -6,6 +6,13 @@ local g = vim.g
 local o = vim.o
 
 
+vim.o.list = true
+
+vim.opt.listchars:append({ tab = '> ' })
+vim.opt.listchars:append({ lead = '·' })
+vim.opt.listchars:append({ trail = '·' }) 
+vim.opt.listchars:append({ space = '·' }) 
+
 g.mapleader = ' '
 g.maplocalleader = ' '
 
