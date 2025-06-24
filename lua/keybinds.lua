@@ -1,5 +1,5 @@
 local function map(m, k, v)
-  vim.keymap.set(m, k, v, {silent =  true, noremap = true})
+	vim.keymap.set(m, k, v, { silent = true, noremap = true })
 end
 
 
@@ -19,7 +19,23 @@ vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = "Go to next diagnos
 vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = "Open floating diagnostic message" })
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = "Open diagnostics list" })
 
--- Remap vertical split
-map('n', '<leader>v', '<C-w>v')
+-- Remap vertical split on leader + s + v
+map('n', '<leader>sv', '<C-w>v')
+
+-- Remap horizontal split on leader + s + h
+map('n', '<leader>sh', '<C-w>s')
+
 -- Remap switching to normal mode
 map('i', 'jj', '<Esc>')
+
+-- Remap saving buffer to cmd + s
+map('n', '<D-s>', ':w<CR>')
+
+
+-- Replace <C-j> with Ctrl-n functionality
+vim.keymap.set('n', '<C-n>', '<C-j>', { noremap = true, silent = true })
+vim.keymap.set('i', '<C-n>', '<C-j>', { noremap = true, silent = true })
+
+-- Replace <C-k> with Ctrl-p functionality
+vim.keymap.set('n', '<C-p>', '<C-k>', { noremap = true, silent = true })
+vim.keymap.set('i', '<C-p>', '<C-k>', { noremap = true, silent = true })

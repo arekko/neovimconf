@@ -1,4 +1,3 @@
-
 -- [[ Setting options ]]
 -- See `:help vim.o`
 --
@@ -10,8 +9,8 @@ vim.o.list = true
 
 vim.opt.listchars:append({ tab = '> ' })
 vim.opt.listchars:append({ lead = '·' })
-vim.opt.listchars:append({ trail = '·' }) 
-vim.opt.listchars:append({ space = '·' }) 
+vim.opt.listchars:append({ trail = '·' })
+vim.opt.listchars:append({ space = '·' })
 
 g.mapleader = ' '
 g.maplocalleader = ' '
@@ -56,7 +55,7 @@ o.completeopt = 'menuone,noselect'
 -- NOTE: You should make sure your terminal supports this
 o.termguicolors = true
 
-vim.opt.guifont = {'JetBrains_Mono', ':h15'}
+vim.opt.guifont = { 'losevka', ':h24' }
 
-o.tabstop = 2
-o.shiftwidth = 2
+o.tabstop = 4
+o.shiftwidth = 4
